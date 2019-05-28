@@ -1,0 +1,71 @@
+.header {
+  background-image: url("../img/notify.jpg");
+  background-position: center bottom;
+  background-size: cover;
+  min-height: 600px;
+  &__content {
+    padding-left: 116px;
+    @media (max-width: 1280px) {
+      padding-left: 0;
+    }
+  }
+  &__title {
+    font-family: "Pacifico", sans-serif;
+    font-weight: 400;
+    font-size: 57px;
+    line-height: 105px;
+    margin-top: 145px;
+    margin-bottom: 0;
+    color: #ffffff;
+  }
+  .dot {
+    color: $main-color;
+  }
+  .lead {
+    font-size: 25px;
+    line-height: 36px;
+    margin-top: 26px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 586px;
+    @media (max-width: 1280px) {
+      padding-right: 308px;
+    }
+    @media (max-width: 768px) {
+      padding-right: 150px;
+    }
+  }
+  &__icons {
+    margin-top: 20px;
+    a {
+      display: inline-block;
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 55px;
+      height: 55px;
+
+      background: rgba(0, 0, 0, 0.3);
+      border: none;
+      border-radius: 50%;
+      text-align: center;
+      i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 32px;
+        color: rgba($color: #fff, $alpha: 0.4);
+      }
+      & + a {
+        margin-left: 10px;
+      }
+      &:hover {
+        background: $main-color;
+        i {
+          color: rgba($color: #fff, $alpha: 1);
+        }
+      }
+    }
+  }
+}

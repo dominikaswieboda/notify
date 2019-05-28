@@ -1,0 +1,38 @@
+.footer {
+  background: $dark-color;
+  &__content {
+    margin: 57px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 768px) {
+      margin: 25px 0;
+    }
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      @media (max-width: 768px) {
+        flex-direction: column;
+      }
+    }
+    li {
+      & + li {
+        margin-left: 35px;
+        @media (max-width: 768px) {
+          margin-left: 0;
+          padding-top: 15px;
+        }
+      }
+    }
+    a {
+      color: #848484;
+      &:hover {
+        color: $main-color;
+      }
+    }
+  }
+}

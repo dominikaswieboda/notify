@@ -1,0 +1,115 @@
+body {
+  font-family: "HelveticaNeue-Roman", sans-serif;
+  font-weight: 400;
+  background: $main-color;
+  border-top: 10px solid $main-color;
+  // @media (max-width: 1280px) {
+  //   background: green;
+  // }
+  // @media (max-width: 956px) {
+  //   background: yellow;
+  // }
+  // @media (max-width: 768px) {
+  //   background: violet;
+  // }
+  // @media (max-width: 480px) {
+  //   background: aqua;
+  // }
+}
+* {
+  box-sizing: border-box;
+}
+.container {
+  width: 1210px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  overflow: hidden;
+  @media (max-width: 1280px) {
+    width: 790px;
+  }
+  @media (max-width: 956px) {
+    width: 600px;
+  }
+  @media (max-width: 768px) {
+    width: 420px;
+  }
+  @media (max-width: 480px) {
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 100%;
+  }
+}
+img {
+  width: 100%;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+ul {
+  list-style-type: none;
+}
+.lead {
+  font-family: "HelveticaNeue-Medium", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  margin: 0;
+  padding: 20px 0;
+  color: #ffffff;
+}
+
+p {
+  font-family: "HelveticaNeue-Roman", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  font-size: 16px;
+  line-height: 26px;
+  color: #848484;
+}
+h3 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 18px;
+  margin: 0;
+  color: #222222;
+}
+h6 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 18px;
+  margin: 0;
+  color: #222222;
+}
+.text-center {
+  text-align: center;
+}
+
+%btn-shared {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 18px;
+  display: inline-block;
+  padding: 15px 25px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn {
+  &-main {
+    @extend %btn-shared;
+    color: #ffffff;
+    background: $main-color;
+    &:hover {
+      opacity: 0.7;
+      transition: all 0.5s ease;
+    }
+  }
+}
